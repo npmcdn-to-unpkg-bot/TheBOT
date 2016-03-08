@@ -14,4 +14,20 @@
  *= require_self
  */
 
- 
+ .homeheader{
+   border:1px solid black;
+ }
+
+.col-lg-6{
+  border:1px solid black;
+  height:500px;
+}
+
+.col-lg-5{
+  border:1px solid black;
+  height:500px;
+}
+.col-lg-7{
+  border:1px solid black;
+  height:500px;
+}
