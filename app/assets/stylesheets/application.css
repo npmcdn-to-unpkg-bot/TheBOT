@@ -16,12 +16,33 @@
 .row{
   margin:0
 }
+
+.nav.nav-tabs{
+  padding:40px;
+  background-color:black;
+}
+.nav.nav-tabs li{
+  padding-left:40px;
+  float:right;
+  color:white;
+  background-color:black;
+}
+
  .about{
    text-align:center;
+   height:300px;
+   padding-top:40px;
+ }
+
+ .tech-about{
    height:500px;
    padding-top:40px;
  }
 
+ .tech-about.row{
+   padding-top:40px;
+ }
+ 
  .homeheader{
    border:1px solid black;
  }
