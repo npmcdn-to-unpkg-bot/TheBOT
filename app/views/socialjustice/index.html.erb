@@ -1,0 +1,28 @@
+<div class = "news">
+ <h1>#Black Lives Matter</h1>
+  <div class = "row">
+   <div class = "col-lg-12">
+    <% @tweet_blm.each do |tweet| %>
+      <blockquote class="twitter-tweet"
+        data-link-color="#55acee" lang="en">
+        <p><%= tweet.text %></p>
+        <a href= "<%= tweet.url %>"></a>
+      </blockquote>
+    <% end %>
+   </div>
+  </div>
+
+  <h1>#Social Justice</h1>
+   <div class = "row">
+    <div class = "col-lg-12">
+     <% @tweet_sj.each do |tweet| %>
+       <blockquote class="twitter-tweet"
+         data-link-color="#55acee" lang="en">
+         <p><%= tweet.text %></p>
+         <a href= "<%= tweet.url %>"></a>
+       </blockquote>
+     <% end %>
+    </div>
+   </div>
+
+</div>

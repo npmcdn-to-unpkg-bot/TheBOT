@@ -1,5 +1,27 @@
 <div class = "news">
-  <% @tweets.each do |tweet| %>
-  <%= tweet.text %>
-  <% end %>
-</div>
+ <h1>#BlackTwitter Headline News</h1>
+  <div class = "row">
+   <div class = "col-lg-12">
+    <% @tweet_news.each do |tweet| %>
+      <blockquote class="twitter-tweet"
+        data-link-color="#55acee" lang="es">
+        <!-- <p><%= tweet.text %></p> -->
+        <a href= "<%= tweet.url %>"></a>
+      </blockquote>
+    <% end %>
+   </div>
+  </div>
+
+  <h1>#BlackTwitter Updates</h1>
+   <div class = "row">
+    <div class = "col-lg-12">
+     <% @tweet_news.each do |tweet| %>
+      <blockquote class="twitter-tweet"
+       data-link-color="#55acee" lang="es">
+       <a href= "<%= tweet.url %>"></a>
+      </blockquote>
+     <% end %>
+    </div>
+   </div>
+
+ </div>

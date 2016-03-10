@@ -2,7 +2,9 @@ class NewsController < ApplicationController
 
   def index
      tweet = NewsController.new.tweets
-     @tweets = tweet.search("-filter:retweets -filter:media filter:safe lang:en news #blacktwitter")
+     @tweet_news = tweet.search("-filter:retweets -filter:media filter:safe lang:en news #blacktwitter")
+     @tweet_updates = tweet.search("-filter:retweets -filter:media filter:safe lang:en update #blacktwitter")
+     @tweet_news_part_2 = tweet.search("-filter:retweets -filter:media filter:safe lang:en news #blacknews")
   end
 
   def tweets

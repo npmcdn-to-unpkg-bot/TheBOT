@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   get "/", to: "home#index"
   get "/news", to: "news#index"
-  
+  get "/socialjustice", to: "socialjustice#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
