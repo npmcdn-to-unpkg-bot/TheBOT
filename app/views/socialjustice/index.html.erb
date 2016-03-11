@@ -5,8 +5,8 @@
     <% @tweet_blm.each do |tweet| %>
       <blockquote class="twitter-tweet"
         data-link-color="#55acee" lang="en">
-        <p><%= tweet.text %></p>
-        <a href= "<%= tweet.url %>"></a>
+        <p><%= tweet.content %></p>
+        <a href= "<%= tweet.tweet_url %>"></a>
       </blockquote>
     <% end %>
    </div>
@@ -18,8 +18,8 @@
      <% @tweet_sj.each do |tweet| %>
        <blockquote class="twitter-tweet"
          data-link-color="#55acee" lang="en">
-         <p><%= tweet.text %></p>
-         <a href= "<%= tweet.url %>"></a>
+         <p><%= tweet.content%></p>
+         <a href= "<%= tweet.tweet_url %>"></a>
        </blockquote>
      <% end %>
     </div>

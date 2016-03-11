@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function() {
+  $(".banner").click(function(){
+    window.location.href = "/news";
+  });
+
+  $(".politics").click(function(){
+    window.location.href = "/politics";
+  });
+
+  $(".socialjustice").click(function(){
+    window.location.href = "/socialjustice";
+  });
+
+  $(".film").click(function(){
+    window.location.href = "/film";
+  });
+
+  $(".music").click(function(){
+    window.location.href = "/music";
+  });
+
+});

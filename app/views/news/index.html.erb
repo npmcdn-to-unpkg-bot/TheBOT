@@ -1,27 +1,18 @@
 <div class = "news">
  <h1>#BlackTwitter Headline News</h1>
-  <div class = "row">
-   <div class = "col-lg-12">
-    <% @tweet_news.each do |tweet| %>
-      <blockquote class="twitter-tweet"
-        data-link-color="#55acee" lang="es">
-        <!-- <p><%= tweet.text %></p> -->
-        <a href= "<%= tweet.url %>"></a>
-      </blockquote>
-    <% end %>
-   </div>
+  <% @tweet_news.each do |tweet| %>
+   <div class = "row">
+    <div class = "col-lg-4">
+     <blockquote class="twitter-tweet"
+      data-link-color="#55acee" lang="en">
+      <p><%= tweet.content %></p>
+      <a href= "<%= tweet.tweet_url %>"></a>
+    </blockquote>
+  <% end %>
+
   </div>
 
-  <h1>#BlackTwitter Updates</h1>
-   <div class = "row">
-    <div class = "col-lg-12">
-     <% @tweet_news.each do |tweet| %>
-      <blockquote class="twitter-tweet"
-       data-link-color="#55acee" lang="es">
-       <a href= "<%= tweet.url %>"></a>
-      </blockquote>
-     <% end %>
-    </div>
-   </div>
+  </div>
+
 
  </div>
