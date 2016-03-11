@@ -1,8 +1,8 @@
-class Socialjustice < ActiveRecord::Base
+class Socialjustice < Account
 
-  def self.index
-    @tweet_sj = tweet.search("-filter:retweets -filter:media filter:safe lang:en 'social justice' #blacktwitter")
-    @tweet_blm = tweet.search("-filter:retweets -filter:media filter:safe lang:en update #blacklivesmatter")
+  def self.refresh_data
+    @tweet_sj = tweets.search("-filter:retweets -filter:media filter:safe lang:en 'social justice' #blacktwitter")
+    @tweet_blm = tweets.search("-filter:retweets -filter:media filter:safe lang:en update #blacklivesmatter")
 
      @tweet_sj.each do |tweet|
        create!(
@@ -19,6 +19,6 @@ class Socialjustice < ActiveRecord::Base
       content: tweet.text,
       )
     end
-    
   end
+
 end

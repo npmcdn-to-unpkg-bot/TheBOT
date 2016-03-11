@@ -1,1 +1,14 @@
-Music Now
+
+<div class = "news">
+ <h1>#BlackTwitter Music</h1>
+  <% @tweet_music.each do |tweet| %>
+   <div class = "row">
+    <div class = "col-lg-4">
+     <blockquote class="twitter-tweet"
+      data-link-color="#55acee" lang="en">
+      <p><%= tweet.content %></p>
+      <a href= "<%= tweet.tweet_url %>"></a>
+    </blockquote>
+  <% end %>
+  </div>
+  </div>
