@@ -1,28 +1,39 @@
+
 <div class = "news">
- <h1>#Black Lives Matter</h1>
-  <div class = "row">
-   <div class = "col-lg-12">
-    <% @tweet_blm.each do |tweet| %>
+ <h1>#BlackLivesMatter</h1>
+  <% @tweet_blm.in_groups_of(4,false).each do |group| %>
+   <div class = "row">
+    <% group.each do |tweet| %>
+     <div class = "col-lg-4">
       <blockquote class="twitter-tweet"
+       data-link-color="#55acee" lang="en">
+       <p><%= tweet.content %></p>
+       <a href= "<%= tweet.tweet_url %>"></a>
+      </blockquote>
+     </div >
+    <% end %>
+   </div>
+  <% end %>
+ </div>
+
+
+ <div class = "news">
+  <h1>#BlackTwitter Social Justice</h1>
+   <% @tweet_sj.in_groups_of(4,false).each do |group| %>
+    <div class = "row">
+     <% group.each do |tweet| %>
+      <div class = "col-lg-4">
+       <blockquote class="twitter-tweet"
         data-link-color="#55acee" lang="en">
         <p><%= tweet.content %></p>
         <a href= "<%= tweet.tweet_url %>"></a>
-      </blockquote>
-    <% end %>
-   </div>
-  </div>
-
-  <h1>#Social Justice</h1>
-   <div class = "row">
-    <div class = "col-lg-12">
-     <% @tweet_sj.each do |tweet| %>
-       <blockquote class="twitter-tweet"
-         data-link-color="#55acee" lang="en">
-         <p><%= tweet.content%></p>
-         <a href= "<%= tweet.tweet_url %>"></a>
        </blockquote>
+      </div >
      <% end %>
     </div>
-   </div>
+   <% end %>
+  </div>
+
+
 
 </div>
