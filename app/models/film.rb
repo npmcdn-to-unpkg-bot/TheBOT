@@ -9,4 +9,17 @@ class Film < Account
        )
      end
    end
+
+   def self.refresh_data_different
+     @tweet_films_different = tweets.search("-filter:retweets filter:safe lang:en theater OR movies OR film OR actress OR actor OR cinema #blacknews")
+      @tweet_films_different.each do |tweet|
+        create!(
+        tweet_id: tweet.id,
+        tweet_url: tweet.url,
+        content: tweet.text,
+        )
+      end
+    end
+
+
 end

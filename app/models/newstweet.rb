@@ -11,6 +11,7 @@ class Newstweet < Account
          tweet_url: tweet.url,
          content: tweet.text,
          )
+         
        end
 
        @tweet_updates.each do |tweet|
