@@ -12,6 +12,7 @@ class Newstweet < Account
          content: tweet.text,
          )
 
+  
        end
 
        @tweet_updates.each do |tweet|

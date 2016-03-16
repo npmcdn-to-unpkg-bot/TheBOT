@@ -29,13 +29,11 @@ $(document).ready(function() {
          {text: "Amet", weight: 5}
 
      ];
+
   if ($("#example").length) {
       // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
       $("#example").jQCloud(word_array);
   };
-
-
-
 
   $(".banner").click(function(){
     window.location.href = "/news";

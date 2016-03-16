@@ -21,25 +21,6 @@
  }
  /*sticky footer*/
 
-
- .contenthover {
-   padding:20px 20px 10px 20px;
- }
- .contenthover, .contenthover h3, contenthover a {
-   color:#fff;
- }
- .contenthover h3, .contenthover p {
-   margin:0 0 10px 0; line-height:1.4em; padding:0;
-  }
- .contenthover a.mybutton {
-   display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-  }
- .contenthover a.mybutton:hover {
-   background:#34742d;
- }
-
-
-
  html, body {
      height: 100%;
      font-family: 'Work Sans', sans-serif
@@ -52,8 +33,6 @@
 .row{
   margin:0
 }
-
-
 
 img{
   width:100%;
@@ -108,6 +87,7 @@ img{
   background-image:cover;
 }
 
+
 .col-lg-6 img{
   height:250px;
 }
@@ -123,9 +103,17 @@ background-size:cover;
 height:500px;
 }
 
+.banner:hover{
+  background:#ff3434;;
+}
+
 .socialjustice{
   background-image: url("socialj.jpg");
   background-size:cover;
+}
+
+.socialjustice:hover{
+  background:blue;
 }
 
 .politics{
@@ -133,9 +121,17 @@ height:500px;
   background-size:cover;
 }
 
+.politics:hover{
+  background:blue;
+}
+
 .film{
-  background-image: url("newsbot.jpg");
+  background-image: url("actress.jpg");
   background-size:cover;
+}
+
+.film:hover{
+  background:blue;
 }
 
 .music{
@@ -143,9 +139,11 @@ height:500px;
   background-size:cover;
 }
 
+.music:hover{
+  background:blue;
+}
 
 .col-lg-7{
-
   /*change this for the main images*/
   padding:0px;
 }
