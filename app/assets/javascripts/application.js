@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require jqcloud
+//= require bootstrap
+
 
 
 $(document).ready(function() {

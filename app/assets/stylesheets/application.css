@@ -14,6 +14,7 @@
  *= require_self
  */
  *= require jqcloud
+ *= require bootstrap
 
  .wrapper{
    min-height:100vh;
