@@ -1,7 +1,7 @@
 class Socialjustice < Account
 
   def self.refresh_data
-    @tweet_sj = tweets.search("-filter:retweets -filter:media filter:safe lang:en 'social justice' #blacktwitter")
+    @tweet_sj = tweets.search(" -From:BlackLiesMatter -filter:retweets -filter:media filter:safe lang:en 'social justice' #blacktwitter")
     @tweet_blm = tweets.search("-filter:retweets -filter:media filter:safe lang:en update #blacklivesmatter")
 
      @tweet_sj.each do |tweet|

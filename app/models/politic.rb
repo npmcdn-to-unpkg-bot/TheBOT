@@ -1,6 +1,6 @@
 class Politic < Account
  def self.refresh_data
-  @tweet_politics = tweets.search("-filter:retweets  filter:safe lang:en  mayor OR governor OR election OR government OR politician OR politicians OR President #blacktwitter -'donald trump' -'hillary clinton' -trump")
+  @tweet_politics = tweets.search("-filter:retweets  filter:safe lang:en  mayor")
   @tweet_donald = tweets.search("-filter:retweets -filter:media filter:safe lang:en 'donald trump' #blacktwitter")
   @tweet_hillary = tweets.search("-filter:retweets -filter:media filter:safe lang:en 'hillary clinton' #blacknews")
     # index.search("-filter:retweets -filter:media filter:safe lang:en news #blacktwitter").each do |tweet|
