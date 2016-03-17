@@ -16,6 +16,12 @@
  *= require jqcloud
  *= require bootstrap
 
+.carousel-example-generic{
+  width:50%;
+}
+
+
+
  .wrapper{
    min-height:100vh;
  }
@@ -104,7 +110,8 @@ height:500px;
 }
 
 .banner:hover{
-  background:#ff3434;;
+opacity:0.9;
+background:#FFFFFF;
 }
 
 .socialjustice{
