@@ -16,10 +16,18 @@
  *= require jqcloud
  *= require bootstrap
 
-.carousel-example-generic{
-  width:50%;
+#carousel-example-generic{
+  width:300px;
 }
 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size:20px;
+  color:white;
+
+}
 
 
  .wrapper{
