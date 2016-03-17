@@ -27,6 +27,10 @@ gem 'whenever', :require => false
 
 gem 'twitter'
 
+gem 'will_paginate', '~> 3.0.5'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
+gem 'bootstrap-sass', '~> 3.0.3.0'
+
 gem 'dotenv-rails'
 
 # Use ActiveModel has_secure_password

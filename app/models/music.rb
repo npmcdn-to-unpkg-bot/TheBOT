@@ -7,10 +7,11 @@ class Music < Account
       #  if user_name == this
       # then don't save
       # else create below
-       create!(
+       create(
        tweet_id: tweet.id,
        tweet_url: tweet.url,
        content: tweet.text,
+       published_at: tweet.created_at
        )
       end
     end

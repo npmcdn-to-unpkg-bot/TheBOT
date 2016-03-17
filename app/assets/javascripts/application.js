@@ -18,7 +18,6 @@
 //= require bootstrap
 
 
-
 $(document).ready(function() {
 
   var word_array = [
