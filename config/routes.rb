@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
 
-  get "/", to: "home#index"
+
+ # root to: "users#show"
+  root to:  "home#index"
   get "/news", to: "news#index"
   get "/socialjustice", to: "socialjustice#index"
   get "/politics", to: "politics#index"
   get "/music", to: "music#index"
   get "/film", to: "film#index"
+  get "/auth/twitter/callback", to: "sessions#create"
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

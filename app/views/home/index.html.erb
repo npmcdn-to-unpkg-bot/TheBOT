@@ -1,6 +1,22 @@
 
 <div class ="homeheader">
 
+  <% if current_user %>
+   <%= link_to "sign out", signout_path, :class => "signout" %>
+    <ul>
+      <li>Username : <%= current_user.username %></li>
+      <li>Location : <%= current_user.location %></li>
+      <li>Photo Link :<%= current_user.avatar_url %></li>
+    </ul>
+
+  <% else %>
+    <a href = "/auth/twitter"> Sign In</a>
+  <%end %>
+
+
+
+
+
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -14,7 +30,9 @@
       <div class="item active">
         <img src="assets/newsbot.jpg" alt="...">
         <div class="carousel-caption">
+          <button>Sign In Here</button>
           <h1>Latest and Greatest News</h1>
+
         </div>
       </div>
       <div class="item">
@@ -61,19 +79,19 @@
    <div class = "col-lg-5">
     <div class = "row">
      <div class = "col-lg-6 politics">
-       <span class="text-content"><span>Politics</span></span>
+       <span class="text-content-small"><span>Politics</span></span>
      </div>
      <div class = "col-lg-6 socialjustice">
-       <span class="text-content"><span>Social Justice</span></span>
+       <span class="text-content-small"><span>Social Justice</span></span>
      </div>
     </div>
 
     <div class = "row">
      <div class = "col-lg-6 film">
-       <span class="text-content"><span>Film</span></span>
+       <span class="text-content-small"><span>Film</span></span>
      </div>
      <div class = "col-lg-6 music">
-       <span class="text-content"><span>#Music</span></span>
+       <span class="text-content-small"><span>#Music</span></span>
      </div>
     </div>
    </div>

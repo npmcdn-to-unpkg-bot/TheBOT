@@ -5,7 +5,7 @@
    <% @tweet_politics.in_groups_of(4,false).each do |group| %>
     <div class = "row">
      <% group.each do |tweet| %>
-      <div class = "col-lg-4">
+      <div class = "col-lg-3">
        <blockquote class="twitter-tweet"
         data-link-color="#55acee" lang="en">
         <p><%= tweet.content %></p>

@@ -13,6 +13,7 @@ class Music < Account
        content: tweet.text,
        published_at: tweet.created_at
        )
+       
       end
     end
 

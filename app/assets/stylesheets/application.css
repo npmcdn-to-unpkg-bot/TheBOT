@@ -16,6 +16,10 @@
  *= require jqcloud
  *= require bootstrap
 
+/*button {
+  margin:auto;
+}*/
+
 #carousel-example-generic{
   width:300px;
 }
@@ -26,7 +30,7 @@ span.text-content span {
   vertical-align: middle;
   font-size:20px;
   color:white;
-  
+
 
 }
 
@@ -119,8 +123,7 @@ height:500px;
 }
 
 .banner:hover{
-opacity:0.9;
-background:#FFFFFF;
+  -webkit-filter: brightness(50%);
 }
 
 .socialjustice{
@@ -129,7 +132,7 @@ background:#FFFFFF;
 }
 
 .socialjustice:hover{
-  background:blue;
+    -webkit-filter: brightness(50%);
 }
 
 .politics{
@@ -138,7 +141,7 @@ background:#FFFFFF;
 }
 
 .politics:hover{
-  background:blue;
+    -webkit-filter: brightness(50%);
 }
 
 .film{
@@ -147,7 +150,7 @@ background:#FFFFFF;
 }
 
 .film:hover{
-  background:blue;
+    -webkit-filter: brightness(50%);
 }
 
 .music{
@@ -156,7 +159,7 @@ background:#FFFFFF;
 }
 
 .music:hover{
-  background:blue;
+  -webkit-filter: brightness(50%);
 }
 
 .col-lg-7{

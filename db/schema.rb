@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160317201200) do
+ActiveRecord::Schema.define(version: 20160318205442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,38 +30,53 @@ ActiveRecord::Schema.define(version: 20160317201200) do
     t.string   "tweet_id"
     t.string   "tweet_url"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "published_at"
   end
 
   create_table "musics", force: :cascade do |t|
     t.string   "tweet_id"
     t.string   "tweet_url"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "published_at"
   end
 
   create_table "newstweets", force: :cascade do |t|
     t.string   "tweet_id"
     t.string   "tweet_url"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "published_at"
   end
 
   create_table "politics", force: :cascade do |t|
     t.string   "tweet_id"
     t.string   "tweet_url"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "published_at"
   end
 
   create_table "socialjustices", force: :cascade do |t|
     t.string   "tweet_id"
     t.string   "tweet_url"
     t.text     "content"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "published_at"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "uid"
+    t.string   "provider"
+    t.string   "avatar_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

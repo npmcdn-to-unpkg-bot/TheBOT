@@ -9,6 +9,7 @@ class Socialjustice < Account
        tweet_id: tweet.id,
        tweet_url: tweet.url,
        content: tweet.text,
+       published_at: tweet.created_at
        )
      end
 
@@ -17,6 +18,7 @@ class Socialjustice < Account
       tweet_id: tweet.id,
       tweet_url: tweet.url,
       content: tweet.text,
+      published_at: tweet.created_at
       )
     end
   end
