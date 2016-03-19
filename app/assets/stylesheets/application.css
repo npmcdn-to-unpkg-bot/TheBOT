@@ -22,6 +22,7 @@
 
 #carousel-example-generic{
   width:300px;
+  /*work on the width of the carousel and split on the screen*/
 }
 
 span.text-content span {
@@ -30,8 +31,6 @@ span.text-content span {
   vertical-align: middle;
   font-size:20px;
   color:white;
-
-
 }
 
 
