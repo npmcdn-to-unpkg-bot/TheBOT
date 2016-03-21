@@ -13,23 +13,23 @@
 #   rake "db:migrate"
 # end
 
-every 20.minutes do
+every 1.minutes do
   runner "Newstweet.refresh_data"
 end
 
-every 20.minutes do
+every 1.minutes do
   runner "Music.refresh_data"
 end
 
-every 20.minutes do
+every 1.minutes do
   runner "Politic.refresh_data"
 end
 
-every 20.minutes do
+every 1.minutes do
   runner "Film.refresh_data"
 end
 
-every 20.minutes do
+every 1.minutes do
   runner "Socialjustice.refresh_data"
 end
 
