@@ -3,12 +3,10 @@
 
   <% if current_user %>
    <%= link_to "sign out", signout_path, :class => "signout" %>
-    <ul>
-      <li>Username : <%= current_user.username %></li>
-      <li>Location : <%= current_user.location %></li>
-      <li>Photo Link :<%= current_user.avatar_url %></li>
+    <ul class = "avatar">
+      <li>Welcome Back <%= current_user.username %>!</li>
+      <li>You're Looking Beautiful Today <img src = "<%= current_user.avatar_url %>"><img></li>
     </ul>
-
   <% else %>
     <a href = "/auth/twitter"> Sign In</a>
   <%end %>

@@ -25,6 +25,10 @@
   /*work on the width of the carousel and split on the screen*/
 }
 
+.avatar img {
+  width:200px;
+}
+
 span.text-content span {
   display: table-cell;
   text-align: center;

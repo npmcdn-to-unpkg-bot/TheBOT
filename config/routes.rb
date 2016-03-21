@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/music", to: "music#index"
   get "/film", to: "film#index"
   get "/auth/twitter/callback", to: "sessions#create"
+  get '/signout', to: 'sessions#destroy', as: :signout
 
 
 
