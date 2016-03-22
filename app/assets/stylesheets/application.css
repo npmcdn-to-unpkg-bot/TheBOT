@@ -20,13 +20,18 @@
   margin:auto;
 }*/
 
+.jumbotron{
+  background-color:red;
+}
+
 #carousel-example-generic{
   width:300px;
   /*work on the width of the carousel and split on the screen*/
 }
 
-.avatar img {
-  width:200px;
+.avatar {
+  width:50px;
+  height:50px;
 }
 
 span.text-content span {

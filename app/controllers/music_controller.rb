@@ -1,4 +1,5 @@
 class MusicController < ApplicationController
+  require 'json'
   def index
     #  @tweet_music = Music.all
      @tweet_music = Music.order('published_at DESC').paginate(page: params[:page], per_page: 16)

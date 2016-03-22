@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require jqcloud
 //= require bootstrap
@@ -54,6 +53,6 @@ $(document).ready(function() {
     window.location.href = "/music";
   });
 
-  
+
 
 });

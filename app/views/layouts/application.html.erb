@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Thebot</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <script src= "https://platform.twitter.com/widgets.js"></script>
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -13,12 +13,20 @@
 <body>
 
   <ul class = "nav nav-tabs">
-    <li>About</li>
-    <li>Work With Us</li>
-    <a href = "/"><li>Home</li></a>
+    <% if current_user %>
+     <%= link_to "sign out", signout_path, :class => "signout" %>
+        <li>Welcome Back <%= current_user.username %>! <img src = "<%= current_user.avatar_url %>" class = "avatar"><img></li>
+        <li>About</li>
+        <li>Work With Us</li>
+        <a href = "/"><li>Home</li></a>
+    <% else %>
+      <a href = "/auth/twitter"> Sign In</a>
+      <li>About</li>
+      <li>Work With Us</li>
+      <a href = "/"><li>Home</li></a>
+    <%end %>
   </ul>
 
-    </div>
 <%= yield %>
 
   <footer>
@@ -38,8 +46,8 @@
       </div>
     </div>
   </footer>
- <%= javascript_include_tag :application %>
 
+ <%= javascript_include_tag :application %>
 
 </body>
 

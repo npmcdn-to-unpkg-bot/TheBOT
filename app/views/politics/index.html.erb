@@ -19,3 +19,43 @@
 </div>
 
 <%= will_paginate @tweet_politics, :page_links => false %>
+
+<div class = "wrapper">
+ <div class = "news">
+  <h1>#BlackTwitter Trump</h1>
+  <% @tweet_donald.in_groups_of(4, false).each do |group| %>
+   <div class = "row">
+    <% group.each do |tweet| %>
+     <div class = "col-lg-3">
+      <blockquote class="twitter-tweet"
+       data-link-color="#55acee" lang="en">
+       <p><%= tweet.content %></p>
+       <a href= "<%= tweet.tweet_url %>"></a>
+      </blockquote>
+     </div >
+    <% end %>
+   </div>
+  <% end %>
+</div>
+
+<%= will_paginate @tweet_donald, :page_links => false %>
+
+<div class = "wrapper">
+ <div class = "news">
+  <h1>#BlackTwitter Hillary Clinton</h1>
+  <% @tweet_hillary.in_groups_of(4, false).each do |group| %>
+   <div class = "row">
+    <% group.each do |tweet| %>
+     <div class = "col-lg-3">
+      <blockquote class="twitter-tweet"
+       data-link-color="#55acee" lang="en">
+       <p><%= tweet.content %></p>
+       <a href= "<%= tweet.tweet_url %>"></a>
+      </blockquote>
+     </div >
+    <% end %>
+   </div>
+  <% end %>
+</div>
+
+<%= will_paginate @tweet_hillary, :page_links => false %>
