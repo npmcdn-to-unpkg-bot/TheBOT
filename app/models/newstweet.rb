@@ -10,7 +10,8 @@ class Newstweet < Account
          tweet_id: tweet.id,
          tweet_url: tweet.url,
          content: tweet.text,
-         published_at: tweet.created_at
+         published_at: tweet.created_at,
+         newstype: "news"
          )
        end
        @tweet_updates.each do |tweet|
@@ -18,7 +19,8 @@ class Newstweet < Account
          tweet_id: tweet.id,
          tweet_url: tweet.url,
          content: tweet.text,
-         published_at: tweet.created_at
+         published_at: tweet.created_at,
+         newstype:"updates"
          )
        end
 

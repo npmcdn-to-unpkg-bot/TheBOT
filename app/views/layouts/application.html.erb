@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <script src= "https://platform.twitter.com/widgets.js"></script>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
@@ -12,15 +13,16 @@
 </head>
 <body>
 
+
   <ul class = "nav nav-tabs">
     <% if current_user %>
-     <%= link_to "sign out", signout_path, :class => "signout" %>
+      <ul>
         <li>Welcome Back <%= current_user.username %>! <img src = "<%= current_user.avatar_url %>" class = "avatar"><img></li>
-        <li>About</li>
         <li>Work With Us</li>
-        <a href = "/"><li>Home</li></a>
+        <li><a href = "/"><li>Home</li></a>
+        <li><%= link_to "Sign Out", signout_path, :class => "signout" %></li>
+      </ul>
     <% else %>
-      <a href = "/auth/twitter"> Sign In</a>
       <li>About</li>
       <li>Work With Us</li>
       <a href = "/"><li>Home</li></a>
@@ -48,7 +50,7 @@
   </footer>
 
  <%= javascript_include_tag :application %>
-
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>

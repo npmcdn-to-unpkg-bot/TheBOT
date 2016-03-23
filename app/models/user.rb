@@ -10,12 +10,9 @@ class User < ActiveRecord::Base
     #  secret: auth_hash.credentials.secret
      )
      user
-     
+
   end
 
-  def destroy
-    session[:user_id] = nil
-    redirect_to root_path
-  end
+
 
 end

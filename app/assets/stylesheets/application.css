@@ -16,12 +16,31 @@
  *= require jqcloud
  *= require bootstrap
 
-/*button {
-  margin:auto;
-}*/
+
+
+.placeholder{
+  padding-left:20px;
+}
 
 .jumbotron{
-  background-color:red;
+  background-image: url("newsbot.jpg");
+  background-size:cover;
+  height:500px;
+}
+
+form{
+  float:right;
+}
+
+ ul{
+  list-style-type: none;
+}
+
+input{
+  margin-bottom:40px;
+  width:400px;
+  height:40px;
+  font-size:25px;
 }
 
 #carousel-example-generic{

@@ -33,6 +33,11 @@ $(document).ready(function() {
       $("#example").jQCloud(word_array);
   };
 
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+
+
   $(".banner").click(function(){
     window.location.href = "/news";
   });

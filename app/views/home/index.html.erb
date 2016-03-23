@@ -1,46 +1,11 @@
-
-
 <% if current_user %>
-<div class="jumbotron">
-  <div class="container">
-    <h1>The Bot</h1>
-    <form>
-      <input>Username</input>
-      <input>Email</input>
-      <button></button>
-    </form>
-  </div>
-</div>
-<% else %>
-<div class="jumbotron">
-  <div class="container">
-    <h1>The Bot</h1>
-  </div>
-</div>
-<%end %>
-</ul>
-<div class ="homeheader">
-
-
-
-
-  <div class= "about">
-    <p>
-    CAROUSEL  TheBot-The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!
-    </p>
-    <p>
-      Search By Topic of Interest, Tag Favorites, and Join The Conversation
-    </p>
-    <p>
-      TheBot-Created By The People/For The People
-    </p>
-    <i class="fa fa-arrow-circle-o-down"></i>
-  </div>
-
+ <div>
+  <h1>Today's Topics</h1>
+ </div>
 
   <div class = "row">
    <div class = "col-lg-7 banner">
-     <span class="text-content"><span>#Black Twitter General News </span></span>
+    <span class="text-content"><span>#Black Twitter General News </span></span>
    </div>
 
    <div class = "col-lg-5">
@@ -63,11 +28,24 @@
     </div>
    </div>
   </div>
-
 </div>
 
+<div class = "">
+ <div class= "tech-about">
+  <div class = "row">
+   <div class = "col-lg-5">
+     <p>
+       TheBot-The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!
+     </p>
+     <p>Search By Topic of Interest, Tag Favorites, and Join The Conversation</p>
+     <p>TheBot-Created By The People/For The People</p>
+    </div>
+    <div class = "col-lg-7">
+     <p>Image Placeholder</p>
+    </div>
+  </div>
 
- <div class = "jumbotron">
+ <div class = "">
   <div class= "tech-about">
    <div class = "row">
     <div class = "col-lg-5">
@@ -82,17 +60,45 @@
      </div>
    </div>
 
-  <div class = "row">
-   <div class = "col-lg-5">
-    <p>Image Placeholder</p>
-   </div>
-   <div class = "col-lg-7">
-    <p>
-      TheBot-The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!
-    </p>
-    <p>Search By Topic of Interest, Tag Favorites, and Join The Conversation</p>
-    <p>TheBot-Created By The People/For The People</p>
-   </div>
+
+<% else %>
+
+  <div class="your-class">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
   </div>
- </div>
-</div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>The Bot</h1>
+      <form>
+        <ul>
+          <li><h3>Sign In Today!</h3></li>
+          <li><input placeholder ="Username"></input></li>
+          <li><input placeholder ="Email"></input></li>
+          <li><input placeholder ="Photo"></input></li>
+          <li>Click The Button To Sign In With Twitter</li>
+          <button type = "button", class = "btn btn-default"><a href = "/auth/twitter"> Sign In With Twitter</a></button>
+        </ul>
+      </form>
+    </div>
+  </div>
+
+  <div class ="homeheader">
+    <div class= "about">
+      <p>
+      CAROUSEL  TheBot-The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!
+      </p>
+      <p>
+        Search By Topic of Interest, Tag Favorites, and Join The Conversation
+      </p>
+      <p>
+        TheBot-Created By The People/For The People
+      </p>
+      <i class="fa fa-arrow-circle-o-down"></i>
+    </div>
+
+
+
+<%end %>

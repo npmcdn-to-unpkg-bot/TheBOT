@@ -12,7 +12,7 @@ class Socialjustice < Account
        published_at: tweet.created_at,
        socialtype: "socialjustice"
        )
-     end
+     end  
 
     @tweet_blm.each do |tweet|
       create!(
