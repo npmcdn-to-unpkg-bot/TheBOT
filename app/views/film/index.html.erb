@@ -4,7 +4,7 @@
  <% @tweet_films.in_groups_of(4,false).each do |group| %>
   <div class = "row">
    <% group.each do |tweet| %>
-    <div class = "col-lg-4">
+    <div class = "col-lg-3">
      <blockquote class="twitter-tweet"
       data-link-color="#55acee" lang="en">
       <p><%= tweet.content %></p>
@@ -17,3 +17,19 @@
 </div>
 
 <%= will_paginate @tweet_films, :page_links => false %>
+
+<div class = "news">
+ <% @tweet_films_different.in_groups_of(4,false).each do |group| %>
+  <div class = "row">
+   <% group.each do |tweet| %>
+    <div class = "col-lg-3">
+     <blockquote class="twitter-tweet"
+      data-link-color="#55acee" lang="en">
+      <p><%= tweet.content %></p>
+      <a href= "<%= tweet.tweet_url %>"></a>
+     </blockquote>
+    </div >
+   <% end %>
+  </div>
+ <% end %>
+</div>

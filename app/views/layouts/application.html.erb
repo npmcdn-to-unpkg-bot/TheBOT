@@ -19,7 +19,8 @@
       <ul>
         <li>Welcome Back <%= current_user.username %>! <img src = "<%= current_user.avatar_url %>" class = "avatar"><img></li>
         <li>Work With Us</li>
-        <li><a href = "/"><li>Home</li></a>
+        <a href = "/"><li>Home</li></a>
+        <a href = "/account"><li>Account</li></a>
         <li><%= link_to "Sign Out", signout_path, :class => "signout" %></li>
       </ul>
     <% else %>

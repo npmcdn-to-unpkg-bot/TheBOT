@@ -25,17 +25,12 @@ $(document).ready(function() {
          {text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
          {text: "Sit", weight: 7},
          {text: "Amet", weight: 5}
-
      ];
 
   if ($("#example").length) {
       // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
       $("#example").jQCloud(word_array);
   };
-
-  $('.your-class').slick({
-    setting-name: setting-value
-  });
 
 
   $(".banner").click(function(){

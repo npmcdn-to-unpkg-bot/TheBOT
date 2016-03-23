@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/film", to: "film#index"
   get "/auth/twitter/callback", to: "sessions#create"
   get '/signout', to: 'sessions#destroy', as: :signout
+  get '/account', to: "users#show"
 
 
 

@@ -1,6 +1,8 @@
-<h1>User#show</h1>
-<p>Find me in app/views/user/show.html.erb</p>
+<h1>Welcome Back, <%=current_user.username %>!</h1>
+  
+<h3>show how many tweets related to #blacktwitter</h3>
+<h3>Show a dashboard of all tweets</h3>
+
+<b><%= current_user.email %></b>
 
 <%= image_tag current_user.avatar_url %>
-<h1><%= current_user.username %></h1>
-<b><%= current_user.email %></b>

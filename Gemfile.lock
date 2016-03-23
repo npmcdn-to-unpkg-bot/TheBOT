@@ -195,6 +195,7 @@ GEM
     whenever (0.9.4)
       chronic (>= 0.6.3)
     will_paginate (3.0.7)
+    words_counted (1.0.2)
 
 PLATFORMS
   ruby
@@ -220,6 +221,7 @@ DEPENDENCIES
   web-console (~> 2.0)
   whenever
   will_paginate (~> 3.0.5)
+  words_counted
 
 BUNDLED WITH
    1.10.6

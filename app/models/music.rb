@@ -13,8 +13,14 @@ class Music < Account
        content: tweet.text,
        published_at: tweet.created_at
        )
-       
+
       end
+
+      text = Music.limit(100).pluck(:content).join(" ")
+      counter = WordsCounted.count(text)
+      a=counter.token_frequency
+      a
+
     end
 
 
