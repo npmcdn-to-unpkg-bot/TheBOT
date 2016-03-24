@@ -16,13 +16,14 @@
 
   <ul class = "nav nav-tabs">
     <% if current_user %>
+    <div>
       <ul>
-        <li>Welcome Back <%= current_user.username %>! <img src = "<%= current_user.avatar_url %>" class = "avatar"><img></li>
+        <li>Welcome Back <%= current_user.username %>!<a href = "/account"><img src = "<%= current_user.avatar_url %>" class = "avatar"><img></a></li>
         <li>Work With Us</li>
-        <a href = "/"><li>Home</li></a>
-        <a href = "/account"><li>Account</li></a>
         <li><%= link_to "Sign Out", signout_path, :class => "signout" %></li>
       </ul>
+    </div>
+    <a href = "/"><li>Home</li></a>
     <% else %>
       <li>About</li>
       <li>Work With Us</li>

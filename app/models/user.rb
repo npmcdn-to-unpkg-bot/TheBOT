@@ -10,7 +10,6 @@ class User < ActiveRecord::Base
     #  secret: auth_hash.credentials.secret
      )
      user
-
   end
 
 end

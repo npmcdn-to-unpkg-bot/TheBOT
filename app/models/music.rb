@@ -16,11 +16,7 @@ class Music < Account
 
       end
 
-      text = Music.limit(100).pluck(:content).join(" ")
-      counter = WordsCounted.count(text)
-      a=counter.token_frequency
-      a
-
+      
     end
 
 
