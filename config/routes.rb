@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/auth/twitter/callback", to: "sessions#create"
   get '/signout', to: 'sessions#destroy', as: :signout
   get '/account', to: "users#show"
+  get'/search', to: "news#token"
 
 
 

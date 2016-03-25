@@ -19,18 +19,32 @@
 
 $(document).ready(function() {
 
-  var word_array = [
-         {text: "Lorem", weight: 15},
-         {text: "Ipsum", weight: 9, link: "http://jquery.com/"},
-         {text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
-         {text: "Sit", weight: 7},
-         {text: "Amet", weight: 5}
-     ];
 
-  if ($("#example").length) {
-      // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
-      $("#example").jQCloud(word_array);
-  };
+  $.get("/search",function(data){
+
+      var word_array = [
+           {text: (data[0][0]), weight: 40},
+           {text: (data[1][0]), weight: 30},
+           {text: (data[2][0]), weight: 30},
+           {text: (data[3][0]), weight: 30},
+           {text: (data[4][0]), weight: 30},
+           {text: (data[5][0]), weight: 30},
+           {text: (data[6][0]), weight: 20},
+           {text: (data[7][0]), weight: 10},
+           {text: (data[8][0]), weight: 10},
+           {text: (data[9][0]), weight: 10},
+           {text: (data[10][0]), weight: 10},
+           {text: (data[11][0]), weight: 10},
+           {text: (data[12][0]), weight: 10},
+           {text: (data[13][0]), weight: 10},
+           {text: (data[14][0]), weight: 10},
+       ];
+
+   if ($("#example").length) {
+       // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+       $("#example").jQCloud(word_array);
+    };
+  });
 
 
   $(".banner").click(function(){
