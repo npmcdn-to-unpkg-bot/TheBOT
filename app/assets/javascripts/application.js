@@ -44,6 +44,7 @@ $(document).ready(function() {
        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
        $("#example").jQCloud(word_array);
     };
+
   });
 
 

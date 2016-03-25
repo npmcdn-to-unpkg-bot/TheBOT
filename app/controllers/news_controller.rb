@@ -44,7 +44,6 @@ class NewsController < ApplicationController
 
       counter = WordsCounted.count(text, exclude:array)
       @token_counter = counter.token_frequency[1..15]
-
       # @token_counter.each do |token|
       #    token[0]
       #    token[1]

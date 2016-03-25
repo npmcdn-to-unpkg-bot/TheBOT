@@ -16,26 +16,24 @@
    <% end %>
   </div>
 
-
   <%= will_paginate @tweet_sj, :page_links => false %>
 
-
-   <div class = "news">
-    <h1>#BlackLivesMatter</h1>
-     <% @tweet_blm.in_groups_of(4,false).each do |group| %>
-      <div class = "row">
-       <% group.each do |tweet| %>
-        <div class = "col-lg-3">
-         <blockquote class="twitter-tweet"
-          data-link-color="#55acee" lang="en">
-          <p><%= tweet.content %></p>
-          <a href= "<%= tweet.tweet_url %>"></a>
-         </blockquote>
-        </div >
-       <% end %>
-      </div>
+ <div class = "news">
+  <h1>#BlackLivesMatter</h1>
+   <% @tweet_blm.in_groups_of(4,false).each do |group| %>
+    <div class = "row">
+     <% group.each do |tweet| %>
+      <div class = "col-lg-3">
+       <blockquote class="twitter-tweet"
+        data-link-color="#55acee" lang="en">
+        <p><%= tweet.content %></p>
+        <a href= "<%= tweet.tweet_url %>"></a>
+       </blockquote>
+      </div >
      <% end %>
     </div>
+   <% end %>
+  </div>
 
 
     <%= will_paginate @tweet_blm, :page_links => false %>
