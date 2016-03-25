@@ -20,6 +20,22 @@
   font-size:50px;
 }
 
+.about {
+  font-size:20px;
+  text-align:center;
+}
+
+.fa.fa-twitter{
+  font-size:250px;
+  text-align:center;
+  margin-left:40px;
+}
+
+.jumbotron h1{
+  color:white;
+
+}
+
 .placeholder{
   padding-left:20px;
 }

@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-
- # root to: "users#show"
   root to:  "home#index"
   get "/news", to: "news#index"
   get "/socialjustice", to: "socialjustice#index"
@@ -12,6 +10,7 @@ Rails.application.routes.draw do
   get '/signout', to: 'sessions#destroy', as: :signout
   get '/account', to: "users#show"
   get'/search', to: "news#token"
+  get '/about', to: "home#about"
 
 
 

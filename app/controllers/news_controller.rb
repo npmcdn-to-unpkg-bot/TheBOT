@@ -18,7 +18,7 @@ class NewsController < ApplicationController
             "yo", "even","x", "going", "two", "at", "whilst","said","why", "one", "no", "twitter", "our",
             "what's", "towards", "taking", "its", "us", "when", "who", "how", "he", "but", "has", "his",
             "they", "than", "r", "black", "qn", "gt", "tfb", "did", "see", "people", "only", "news", "from",
-            "b", "g", "c", "w","their"
+            "b", "g", "c", "w","their", "as", "up", "can"
          ]
 
     counter = WordsCounted.count(text, exclude:array)
@@ -39,7 +39,7 @@ class NewsController < ApplicationController
            "yo", "even","x", "going", "two", "at", "whilst","said","why", "one", "no", "twitter", "our",
            "what's", "towards", "taking", "its", "us", "when", "who", "how", "he", "but", "has", "his",
            "they", "than", "r", "black", "qn", "gt", "tfb", "did", "see", "people", "only", "news", "from",
-           "b", "g", "c", "w", "their"
+           "b", "g", "c", "w", "their", "as", "up", "can"
            ]
 
       counter = WordsCounted.count(text, exclude:array)

@@ -19,7 +19,6 @@
 
 $(document).ready(function() {
 
-
   $.get("/search",function(data){
 
       var word_array = [
@@ -40,13 +39,12 @@ $(document).ready(function() {
            {text: (data[14][0]), weight: 10},
        ];
 
-   if ($("#example").length) {
-       // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
-       $("#example").jQCloud(word_array);
-    };
+     if ($("#example").length) {
+         // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+         $("#example").jQCloud(word_array);
+      };
 
   });
-
 
   $(".banner").click(function(){
     window.location.href = "/news";
@@ -67,7 +65,6 @@ $(document).ready(function() {
   $(".music").click(function(){
     window.location.href = "/music";
   });
-
 
 
 });
