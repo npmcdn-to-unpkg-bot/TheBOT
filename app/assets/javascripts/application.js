@@ -22,33 +22,33 @@ $(document).ready(function() {
   $.get("/search",function(data){
 
       var word_array = [
-           {text: (data[0][0]), weight: 40},
-           {text: (data[1][0]), weight: 30},
-           {text: (data[2][0]), weight: 30},
-           {text: (data[3][0]), weight: 30},
-           {text: (data[4][0]), weight: 30},
+           {text: (data[0][0]), weight: 50},
+           {text: (data[1][0]), weight: 40},
+           {text: (data[2][0]), weight: 40},
+           {text: (data[3][0]), weight: 40},
+           {text: (data[4][0]), weight: 40},
            {text: (data[5][0]), weight: 30},
-           {text: (data[6][0]), weight: 20},
-           {text: (data[7][0]), weight: 10},
-           {text: (data[8][0]), weight: 10},
-           {text: (data[9][0]), weight: 10},
-           {text: (data[10][0]), weight: 10},
-           {text: (data[11][0]), weight: 10},
-           {text: (data[12][0]), weight: 10},
-           {text: (data[13][0]), weight: 10},
-           {text: (data[14][0]), weight: 10},
+           {text: (data[6][0]), weight: 30},
+           {text: (data[7][0]), weight: 30},
+           {text: (data[8][0]), weight: 30},
+           {text: (data[9][0]), weight: 30},
+           {text: (data[10][0]), weight: 30},
+           {text: (data[11][0]), weight: 30},
+           {text: (data[12][0]), weight: 20},
+           {text: (data[13][0]), weight: 20},
+           {text: (data[14][0]), weight: 20},
        ];
 
      if ($("#example").length) {
          // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
          $("#example").jQCloud(word_array);
       };
-
   });
 
   // $('.your-class').slick({
   //   setting-name: setting-value
   // });
+
 
   $(".banner").click(function(){
     window.location.href = "/news";
@@ -116,6 +116,7 @@ $(document).ready(function() {
   $('.music').mouseout(function() {
   $('.text-content_music').css("visibility","hidden");
   });
+
 
 
 });

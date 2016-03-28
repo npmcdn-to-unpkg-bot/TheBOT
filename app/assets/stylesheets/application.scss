@@ -10,15 +10,59 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require jqcloud
+ *= require bootstrap
  *= require_tree .
  *= require_self
  */
- *= require jqcloud
- *= require bootstrap
 
-/*jqcloud .w10{
-  font-size:50px;
-}*/
+
+// .jqcloud .w10{
+//   font-size:50px !important;
+//   background-color:red;
+// }
+
+.col-lg-7 h2{
+  text-align:center;
+  margin-bottom:50px;
+
+}
+
+.btn.btn-info a{
+  color:white;
+  font-size:25px;
+  text-decoration:none;
+}
+
+.text-content_banner{
+  visibility:hidden;
+}
+
+.text-content_politics{
+  visibility:hidden;
+}
+
+.text-content_music{
+  visibility:hidden;
+}
+
+.text-content_film{
+  visibility:hidden;
+}
+
+.text-content_sj{
+  visibility:hidden;
+}
+
+.col-lg-8 h1{
+  margin-bottom:10px;
+}
+
+.jqcloud{
+  padding-bottom:100px;
+  width:500px;
+  margin:auto;
+}
 
 .about {
   font-size:20px;
@@ -29,6 +73,10 @@
   margin: auto;
 
 }
+
+h3 {
+  text-align:center;
+}
 .fa.fa-twitter{
   font-size:250px;
   text-align:center;
@@ -37,7 +85,8 @@
 
 .jumbotron h1{
   color:white;
-
+  font-size:160px;
+  margin-bottom:0px;
 }
 
 .placeholder{
@@ -61,7 +110,7 @@ form{
 input{
   margin-bottom:40px;
   margin-top:20px;
-  width:400px;
+  width:444px;
   height:40px;
   font-size:25px;
   padding-left:10px;
@@ -117,7 +166,6 @@ span.text-content_music span {
   color:white;
 }
 
-
  .wrapper{
    min-height:100vh;
  }
@@ -169,7 +217,9 @@ img{
 
  .tech-about{
    height:500px;
-   padding-top:40px;
+   margin-top:80px;
+   margin-bottom: 80px;
+
  }
 
  .tech-about.row{
@@ -231,6 +281,10 @@ height:500px;
 
 .politics:hover{
     -webkit-filter: brightness(20%);
+}
+
+.text-content_film{
+  font-size:40px;
 }
 
 .film{

@@ -9,4 +9,8 @@ class Account < ActiveRecord::Base
     end
   end
 
+  def post_tweets
+    user.tweets.update(body)
+  end
+
 end

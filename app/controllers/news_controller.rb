@@ -18,7 +18,9 @@ class NewsController < ApplicationController
             "yo", "even","x", "going", "two", "at", "whilst","said","why", "one", "no", "twitter", "our",
             "what's", "towards", "taking", "its", "us", "when", "who", "how", "he", "but", "has", "his",
             "they", "than", "r", "black", "qn", "gt", "tfb", "did", "see", "people", "only", "news", "from",
-            "b", "g", "c", "w","their", "as", "up", "can", "go", 
+            "b", "g", "c", "w","their", "as", "up", "can", "go", "since", "you're", "will", "should", "it's",
+            "i'm", "more", "need", "would", "some", "via", "know", "out", "own", "blacks", "video", "time",
+            "were", "right", "little", "o", "them"
          ]
     counter = WordsCounted.count(text, exclude:array)
     @token_counter = counter.token_frequency[1..15]
@@ -38,7 +40,9 @@ class NewsController < ApplicationController
            "yo", "even","x", "going", "two", "at", "whilst","said","why", "one", "no", "twitter", "our",
            "what's", "towards", "taking", "its", "us", "when", "who", "how", "he", "but", "has", "his",
            "they", "than", "r", "black", "qn", "gt", "tfb", "did", "see", "people", "only", "news", "from",
-           "b", "g", "c", "w", "their", "as", "up", "can", "go"
+           "b", "g", "c", "w", "their", "as", "up", "can", "go", "since", "you're", "will", "should", "it's",
+           "i'm", "more", "need", "would", "some", "via", "know", "out", "own", "blacks", "video", "time",
+           "were", "right", "little", "o", "them"
            ]
 
       counter = WordsCounted.count(text, exclude:array)
