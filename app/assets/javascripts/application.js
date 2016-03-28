@@ -46,24 +46,75 @@ $(document).ready(function() {
 
   });
 
+  // $('.your-class').slick({
+  //   setting-name: setting-value
+  // });
+
   $(".banner").click(function(){
     window.location.href = "/news";
+  });
+
+  $('.banner').mouseover(function() {
+  $('.text-content_banner').css("visibility","visible");
+  });
+
+
+  $('.banner').mouseout(function() {
+  $('.text-content_banner').css("visibility","hidden");
   });
 
   $(".politics").click(function(){
     window.location.href = "/politics";
   });
 
+  $('.politics').mouseover(function() {
+  $('.text-content_politics').css("visibility","visible");
+  });
+
+
+  $('.politics').mouseout(function() {
+  $('.text-content_politics').css("visibility","hidden");
+  });
+
+
   $(".socialjustice").click(function(){
     window.location.href = "/socialjustice";
   });
+
+  $('.socialjustice').mouseover(function() {
+  $('.text-content_sj').css("visibility","visible");
+  });
+
+
+  $('.socialjustice').mouseout(function() {
+  $('.text-content_sj').css("visibility","hidden");
+  });
+
 
   $(".film").click(function(){
     window.location.href = "/film";
   });
 
+  $('.film').mouseover(function() {
+  $('.text-content_film').css("visibility","visible");
+  });
+
+
+  $('.film').mouseout(function() {
+  $('.text-content_film').css("visibility","hidden");
+  });
+
   $(".music").click(function(){
     window.location.href = "/music";
+  });
+
+  $('.music').mouseover(function() {
+  $('.text-content_music').css("visibility","visible");
+  });
+
+
+  $('.music').mouseout(function() {
+  $('.text-content_music').css("visibility","hidden");
   });
 
 

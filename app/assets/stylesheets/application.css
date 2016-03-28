@@ -16,15 +16,19 @@
  *= require jqcloud
  *= require bootstrap
 
-#wordcloud span.w7{
+/*jqcloud .w10{
   font-size:50px;
-}
+}*/
 
 .about {
   font-size:20px;
   text-align:center;
 }
 
+.btn.btn-info{
+  margin: auto;
+
+}
 .fa.fa-twitter{
   font-size:250px;
   text-align:center;
@@ -60,6 +64,7 @@ input{
   width:400px;
   height:40px;
   font-size:25px;
+  padding-left:10px;
 }
 
 #carousel-example-generic{
@@ -73,6 +78,38 @@ input{
 }
 
 span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size:20px;
+  color:white;
+}
+
+span.text-content_film span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size:20px;
+  color:white;
+}
+
+span.text-content_banner span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size:20px;
+  color:white;
+}
+
+span.text-content_sj span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size:20px;
+  color:white;
+}
+
+span.text-content_music span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -162,6 +199,12 @@ img{
   padding-left:0px;
 }
 
+.col-lg-5 p{
+  padding-left:20px;
+  font-size:20px
+
+}
+
 .banner{
 background-image: url("botlogo.jpg");
 background-size:cover;
@@ -169,7 +212,7 @@ height:500px;
 }
 
 .banner:hover{
-  -webkit-filter: brightness(50%);
+  -webkit-filter: brightness(20%);
 }
 
 .socialjustice{
@@ -178,7 +221,7 @@ height:500px;
 }
 
 .socialjustice:hover{
-    -webkit-filter: brightness(50%);
+    -webkit-filter: brightness(20%);
 }
 
 .politics{
@@ -187,7 +230,7 @@ height:500px;
 }
 
 .politics:hover{
-    -webkit-filter: brightness(50%);
+    -webkit-filter: brightness(20%);
 }
 
 .film{
@@ -196,7 +239,7 @@ height:500px;
 }
 
 .film:hover{
-    -webkit-filter: brightness(50%);
+    -webkit-filter: brightness(20%);
 }
 
 .music{
@@ -205,7 +248,7 @@ height:500px;
 }
 
 .music:hover{
-  -webkit-filter: brightness(50%);
+  -webkit-filter: brightness(20%);
 }
 
 .col-lg-7{
