@@ -17,10 +17,7 @@
  */
 
 
-// .jqcloud .w10{
-//   font-size:50px !important;
-//   background-color:red;
-// }
+
 
 .col-lg-7 h2{
   text-align:center;
@@ -36,31 +33,46 @@
 
 .text-content_banner{
   visibility:hidden;
+  font-size:40px;
+  color:white;
+  display: table-cell;
 }
 
 .text-content_politics{
   visibility:hidden;
+  font-size:40px;
+  color:white;
+  display: table-cell;
 }
 
 .text-content_music{
   visibility:hidden;
+  font-size:40px;
+  color:white;
+  display: table-cell;
 }
 
 .text-content_film{
   visibility:hidden;
+  font-size:40px;
+  color:white;
+  display: table-cell;
 }
 
 .text-content_sj{
   visibility:hidden;
+  font-size:40px;
+  color:white;
+  display: table-cell;
 }
 
 .col-lg-8 h1{
   margin-bottom:10px;
+  margin-top:50px;
 }
 
 .jqcloud{
-  padding-bottom:100px;
-  width:500px;
+  padding-bottom:50px;
   margin:auto;
 }
 
@@ -72,6 +84,10 @@
 .btn.btn-info{
   margin: auto;
 
+}
+
+.tweet_input{
+  height:200px;
 }
 
 h3 {
@@ -116,55 +132,25 @@ input{
   padding-left:10px;
 }
 
-#carousel-example-generic{
-  width:300px;
-  /*work on the width of the carousel and split on the screen*/
+
+
+.account_avatar{
+  width:200px;
+  text-align:center;
+
 }
 
 .avatar {
   width:50px;
   height:50px;
+  margin-left:40%;
 }
 
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-size:20px;
-  color:white;
+input[type=submit] {
+  width:200px;
+  float:right;
 }
 
-span.text-content_film span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-size:20px;
-  color:white;
-}
-
-span.text-content_banner span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-size:20px;
-  color:white;
-}
-
-span.text-content_sj span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-size:20px;
-  color:white;
-}
-
-span.text-content_music span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-size:20px;
-  color:white;
-}
 
  .wrapper{
    min-height:100vh;
@@ -190,7 +176,7 @@ img{
 }
 
 .nav.nav-tabs{
-  padding:40px;
+  padding-top:30px;
   background-color:black;
   margin-bottom:0px;
 }
@@ -204,15 +190,6 @@ img{
   font-size:20px;
 }
 
- .about{
-   text-align:center;
-   height:300px;
-   padding-top:40px;
- }
-
-.about p {
-  font-size:20px;
-}
 
 
  .tech-about{
@@ -239,7 +216,6 @@ img{
   background-image:cover;
 }
 
-
 .col-lg-6 img{
   height:250px;
 }
@@ -256,14 +232,64 @@ img{
 }
 
 .banner{
-background-image: url("botlogo.jpg");
-background-size:cover;
 height:500px;
+position:relative;
+
+}
+.banner::before{
+  background-color:black;
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index:-1;
 }
 
-.banner:hover{
-  -webkit-filter: brightness(20%);
+.banner::after{
+  background: black url("botlogo.jpg");
+  background-size:cover;
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index:-1;
 }
+
+.banner:hover::after{
+  opacity:0.7;
+}
+
+.banner:hover span{
+  color:white;
+  -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+           transition: all 0.5s linear;
+}
+
+.politics:hover span{
+  color:white;
+  -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+           transition: all 0.5s linear;
+}
+
+.socialjustice:hover span{
+  color:white;
+  -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+           transition: all 0.5s linear;
+}
+
 
 .socialjustice{
   background-image: url("socialj.jpg");
@@ -271,7 +297,7 @@ height:500px;
 }
 
 .socialjustice:hover{
-    -webkit-filter: brightness(20%);
+
 }
 
 .politics{
@@ -280,7 +306,7 @@ height:500px;
 }
 
 .politics:hover{
-    -webkit-filter: brightness(20%);
+    -webkit-filter: brightness(70%);
 }
 
 .text-content_film{
@@ -293,16 +319,17 @@ height:500px;
 }
 
 .film:hover{
-    -webkit-filter: brightness(20%);
+    -webkit-filter: brightness(70%);
 }
 
 .music{
   background-image: url("music.jpg");
   background-size:cover;
+  -webkit-filter: brightness(70%);
 }
 
 .music:hover{
-  -webkit-filter: brightness(20%);
+
 }
 
 .col-lg-7{
@@ -310,8 +337,14 @@ height:500px;
   padding:0px;
 }
 
+.col-lg-4 li{
+  margin-bottom:20px;
 
+}
 
+.col-lg-4{
+  padding-right:50px;
+}
 .jumbotron{
   padding:30px;
   margin-bottom:0;
@@ -319,8 +352,9 @@ height:500px;
 }
 
 footer{
-  background-color:grey;
+  background-color:#003300;
   height:300px;
   padding-top:80px;
+  color:white;
   /*position:fixed;*/
 }

@@ -26,7 +26,7 @@ $(document).ready(function() {
            {text: (data[1][0]), weight: 40},
            {text: (data[2][0]), weight: 40},
            {text: (data[3][0]), weight: 40},
-           {text: (data[4][0]), weight: 40},
+           {text: (data[4][0]), weight: 30},
            {text: (data[5][0]), weight: 30},
            {text: (data[6][0]), weight: 30},
            {text: (data[7][0]), weight: 30},
@@ -44,10 +44,6 @@ $(document).ready(function() {
          $("#example").jQCloud(word_array);
       };
   });
-
-  // $('.your-class').slick({
-  //   setting-name: setting-value
-  // });
 
 
   $(".banner").click(function(){
@@ -102,6 +98,7 @@ $(document).ready(function() {
 
   $('.film').mouseout(function() {
   $('.text-content_film').css("visibility","hidden");
+
   });
 
   $(".music").click(function(){
@@ -117,6 +114,11 @@ $(document).ready(function() {
   $('.text-content_music').css("visibility","hidden");
   });
 
+  $('.grid').masonry({
+  // options...
+  itemSelector: '.grid-item',
+  columnWidth: 200
+  });
 
 
 });

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'tweets/new'
+
+  get 'tweets/create'
+
   root to:  "home#index"
   get "/news", to: "news#index"
   get "/socialjustice", to: "socialjustice#index"
@@ -12,6 +16,7 @@ Rails.application.routes.draw do
   get'/search', to: "news#token"
   get '/about', to: "home#about"
 
+  resources :tweets, only: [:new, :create]
 
 
   # The priority is based upon order of creation: first created -> highest priority.

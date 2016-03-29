@@ -2,7 +2,7 @@ class Music < Account
 
   def self.refresh_data
     # newest_tweets = tweets.find()
-    @tweet_music = tweets.search("-filter:retweets -'services4Sale' -'#ActionFigure' filter:safe lang:en music OR rap OR hip-hop OR r&b OR pop OR rock&roll OR jazz OR reggae #blacktwitter", since_id: maximum(:tweet_id))
+    @tweet_music = tweets.search("-filter:retweets -'services4Sale' -Adriana filter:safe lang:en music OR rap OR hip-hop OR r&b OR rock&roll OR jazz OR reggae #blacktwitter", since_id: maximum(:tweet_id))
      @tweet_music.each do |tweet|
       #  if user_name == this
       # then don't save

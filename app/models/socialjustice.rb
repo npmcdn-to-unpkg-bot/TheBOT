@@ -2,7 +2,7 @@ class Socialjustice < Account
 
   def self.refresh_data
     @tweet_sj = tweets.search(" -filter:retweets -'BlackLiesMatter' -filter:media filter:safe lang:en 'social justice' #blacktwitter",since_id: maximum(:tweet_id))
-    @tweet_blm = tweets.search("-filter:retweets -filter:media filter:safe lang:en update #blacklivesmatter",since_id: maximum(:tweet_id))
+    @tweet_blm = tweets.search("-filter:retweets -'BlackLiesMatter' -filter:media filter:safe lang:en  #blacklivesmatter",since_id: maximum(:tweet_id))
 
      @tweet_sj.each do |tweet|
        create!(
@@ -12,7 +12,7 @@ class Socialjustice < Account
        published_at: tweet.created_at,
        socialtype: "socialjustice"
        )
-     end  
+     end
 
     @tweet_blm.each do |tweet|
       create!(

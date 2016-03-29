@@ -6,11 +6,9 @@ class Account < ActiveRecord::Base
       config.consumer_secret     = ENV["CONSUMER_SECRET"]
       config.access_token        = ENV["ACCESS_TOKEN"]
       config.access_token_secret = ENV["ACCESS_SECRET"]
-    end
+    end  
   end
 
-  def post_tweets
-    user.tweets.update(body)
-  end
+
 
 end

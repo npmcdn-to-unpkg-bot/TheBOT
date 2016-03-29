@@ -1,8 +1,6 @@
 <h1>Welcome Back, <%=current_user.username %>!</h1>
-
+<%= image_tag current_user.avatar_url, :class => "account_avatar" %>
 <h3>show how many tweets related to #blacktwitter</h3>
 <h3>Show a dashboard of all tweets</h3>
 
 <b><%= current_user.email %></b>
-
-<%= image_tag current_user.avatar_url %>

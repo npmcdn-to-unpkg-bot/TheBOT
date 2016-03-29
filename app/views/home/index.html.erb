@@ -2,23 +2,24 @@
  <div>
   <div class = "row">
     <div class = "col-lg-8">
-      <h1>Today's Trending Topics</h1>
+      <h1>Trending Topics</h1>
       <div id="example" style="width: 550px; height: 350px;"></div>
     </div>
     <div class = "col-lg-4">
       <h3>Post A Tweet About BlackTwitter</h3>
-      <form>
-        <input></input>
-        <input></input>
-        <button class = "btn btn-info center-block">submit</button>
-      </form>
+      <p>
+        <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
+        <%= f.text_field :message, :class => "tweet_input" %>
+        <%= f.submit :class => "btn btn-info center-block" "Send Tweet" %>
+        <% end %>
+      </p>
     </div>
   </div>
  </div>
 
-  <div class = "row">
+  <div cla  ss = "row">
    <div class = "col-lg-7 banner">
-    <span class="text-content_banner"><span><p></p>#Black Twitter General News </span></span>
+    <span class="text-content_banner"><span><p>#Black Twitter General News</p></span></span>
    </div>
 
    <div class = "col-lg-5">
@@ -44,13 +45,14 @@
 </div>
 
 
-<!-- <div>
-  <div class="your-class">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
-</div> -->
-
+<div class ="homeheader">
+  <div class = "about">
+   <p>The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!</p>
+   <p>Search By Topic of Interest, Tag Favorites, and Join The Conversation</p>
+   <p>TheBot-Created By The People/For The People</p>
+   <i class="fa fa-arrow-circle-o-down"></i>
+  </div>
+</div>
 
 <div class = "">
  <div class= "tech-about">
@@ -110,6 +112,21 @@
   </div>
 </div>
 
+
+<div class ="homeheader">
+ <div class= "about">
+   <p>
+   The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!
+   </p>
+   <p>
+     Search By Topic of Interest, Tag Favorites, and Join The Conversation
+   </p>
+   <p>
+     TheBot-Created By The People/For The People
+   </p>
+   <i class="fa fa-arrow-circle-o-down"></i>
+ </div>
+
 <div class = "">
  <div class= "tech-about">
   <div class = "row">
@@ -141,19 +158,5 @@
      </div>
    </div>
   </div>
-
-  <div class ="homeheader">
-    <div class= "about">
-      <p>
-      CAROUSEL  TheBot-The First Site that Aggregates News From #BlackTwitter To Give You The Latest And Greatest, Related To The Movement!
-      </p>
-      <p>
-        Search By Topic of Interest, Tag Favorites, and Join The Conversation
-      </p>
-      <p>
-        TheBot-Created By The People/For The People
-      </p>
-      <i class="fa fa-arrow-circle-o-down"></i>
-    </div>
 
 <%end %>
